@@ -1,0 +1,19 @@
+.answer{
+    padding: 20px;
+}
+.answer:hover{
+    /*background: #B7B7B7;*/
+    cursor: pointer;
+}
+
+.answer_clicked {
+    background: #8b7f7f;
+}
+
+.padding-30{
+    padding: 0 30px;
+}
+
+.padding-15{
+    padding: 0 15px;
+}

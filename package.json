@@ -1,0 +1,17 @@
+{
+  "name": "your-first-node-package",
+  "version": "0.0.0",
+  "description": "My very first package",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server"
+  },
+  "author": "Elijah Insua <tmpvar@gmail.com> (http://tmpvar.com)",
+  "license": "MIT",
+  "dependencies": {
+    "history": "^4.6.3",
+    "react-addons-update": "^15.6.0",
+    "react-scripts": "^1.0.10",
+    "webpack-dev-server": "^2.5.1"
+  }
+}
