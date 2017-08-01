@@ -11,6 +11,7 @@ import Footer from './components/Footer.js';
 // import Question from './components/Question/Question.js';
 import Quiz from './components/Quiz/Quiz.js';
 import CQuiz from './components/CQuiz/CQuiz.js';
+import QuizList from './components/CQuiz/QuizList.js';
 
 const hashHistory = createHashHistory()
 
@@ -23,6 +24,8 @@ class App extends React.Component {
 	    	<Switch>
 			  <Route exact path='/' component={Quiz} />
 				<Route exact path='/add-quiz' component={CQuiz} />
+				<Route path='/list-quiz' component={QuizList} />
+				<Route path='/add-quiz/:quiz' component={CQuiz} />
 			</Switch>
 	    	<Footer />
 	    </div>	

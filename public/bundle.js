@@ -1734,7 +1734,7 @@ var CallbackQueue = __webpack_require__(81);
 var PooledClass = __webpack_require__(20);
 var ReactFeatureFlags = __webpack_require__(86);
 var ReactReconciler = __webpack_require__(24);
-var Transaction = __webpack_require__(38);
+var Transaction = __webpack_require__(39);
 
 var invariant = __webpack_require__(1);
 
@@ -2628,7 +2628,7 @@ var _assign = __webpack_require__(5);
 var ReactCurrentOwner = __webpack_require__(17);
 
 var warning = __webpack_require__(2);
-var canDefineProperty = __webpack_require__(41);
+var canDefineProperty = __webpack_require__(42);
 var hasOwnProperty = Object.prototype.hasOwnProperty;
 
 var REACT_ELEMENT_TYPE = __webpack_require__(105);
@@ -3030,7 +3030,7 @@ module.exports = invariant;
 
 
 var DOMNamespaces = __webpack_require__(50);
-var setInnerHTML = __webpack_require__(40);
+var setInnerHTML = __webpack_require__(41);
 
 var createMicrosoftUnsafeLocalFunction = __webpack_require__(57);
 var setTextContent = __webpack_require__(100);
@@ -3342,7 +3342,7 @@ var cloneElement = ReactElement.cloneElement;
 
 if (process.env.NODE_ENV !== 'production') {
   var lowPriorityWarning = __webpack_require__(66);
-  var canDefineProperty = __webpack_require__(41);
+  var canDefineProperty = __webpack_require__(42);
   var ReactElementValidator = __webpack_require__(106);
   var didWarnPropTypesDeprecated = false;
   createElement = ReactElementValidator.createElement;
@@ -3646,7 +3646,7 @@ var createPath = function createPath(location) {
 
 var _prodInvariant = __webpack_require__(3);
 
-var EventPluginRegistry = __webpack_require__(35);
+var EventPluginRegistry = __webpack_require__(36);
 var EventPluginUtils = __webpack_require__(51);
 var ReactErrorUtils = __webpack_require__(55);
 
@@ -4166,6 +4166,12 @@ module.exports = SyntheticUIEvent;
 /* 33 */
 /***/ (function(module, exports, __webpack_require__) {
 
+module.exports = __webpack_require__(117);
+
+/***/ }),
+/* 34 */
+/***/ (function(module, exports, __webpack_require__) {
+
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
  * Copyright (c) 2013-present, Facebook, Inc.
@@ -4189,7 +4195,7 @@ module.exports = emptyObject;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 34 */
+/* 35 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4267,7 +4273,7 @@ var locationsAreEqual = function locationsAreEqual(a, b) {
 };
 
 /***/ }),
-/* 35 */
+/* 36 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4526,7 +4532,7 @@ module.exports = EventPluginRegistry;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 36 */
+/* 37 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4544,7 +4550,7 @@ module.exports = EventPluginRegistry;
 
 var _assign = __webpack_require__(5);
 
-var EventPluginRegistry = __webpack_require__(35);
+var EventPluginRegistry = __webpack_require__(36);
 var ReactEventEmitterMixin = __webpack_require__(198);
 var ViewportMetrics = __webpack_require__(92);
 
@@ -4855,7 +4861,7 @@ var ReactBrowserEventEmitter = _assign({}, ReactEventEmitterMixin, {
 module.exports = ReactBrowserEventEmitter;
 
 /***/ }),
-/* 37 */
+/* 38 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4932,7 +4938,7 @@ SyntheticUIEvent.augmentClass(SyntheticMouseEvent, MouseEventInterface);
 module.exports = SyntheticMouseEvent;
 
 /***/ }),
-/* 38 */
+/* 39 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5166,7 +5172,7 @@ module.exports = TransactionImpl;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 39 */
+/* 40 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5293,7 +5299,7 @@ function escapeTextContentForBrowser(text) {
 module.exports = escapeTextContentForBrowser;
 
 /***/ }),
-/* 40 */
+/* 41 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5396,7 +5402,7 @@ if (ExecutionEnvironment.canUseDOM) {
 module.exports = setInnerHTML;
 
 /***/ }),
-/* 41 */
+/* 42 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5426,12 +5432,6 @@ if (process.env.NODE_ENV !== 'production') {
 
 module.exports = canDefineProperty;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
-
-/***/ }),
-/* 42 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__(117);
 
 /***/ }),
 /* 43 */
@@ -5910,7 +5910,7 @@ var ReactDOMComponentTree = __webpack_require__(6);
 var ReactInstrumentation = __webpack_require__(12);
 
 var createMicrosoftUnsafeLocalFunction = __webpack_require__(57);
-var setInnerHTML = __webpack_require__(40);
+var setInnerHTML = __webpack_require__(41);
 var setTextContent = __webpack_require__(100);
 
 function getNodeAfter(parentNode, node) {
@@ -10099,7 +10099,7 @@ var _prodInvariant = __webpack_require__(3);
 var DOMLazyTree = __webpack_require__(23);
 var DOMProperty = __webpack_require__(19);
 var React = __webpack_require__(25);
-var ReactBrowserEventEmitter = __webpack_require__(36);
+var ReactBrowserEventEmitter = __webpack_require__(37);
 var ReactCurrentOwner = __webpack_require__(17);
 var ReactDOMComponentTree = __webpack_require__(6);
 var ReactDOMContainerInfo = __webpack_require__(181);
@@ -10112,10 +10112,10 @@ var ReactReconciler = __webpack_require__(24);
 var ReactUpdateQueue = __webpack_require__(56);
 var ReactUpdates = __webpack_require__(16);
 
-var emptyObject = __webpack_require__(33);
+var emptyObject = __webpack_require__(34);
 var instantiateReactComponent = __webpack_require__(98);
 var invariant = __webpack_require__(1);
-var setInnerHTML = __webpack_require__(40);
+var setInnerHTML = __webpack_require__(41);
 var shouldUpdateReactComponent = __webpack_require__(62);
 var warning = __webpack_require__(2);
 
@@ -11229,8 +11229,8 @@ module.exports = isTextInputElement;
 
 
 var ExecutionEnvironment = __webpack_require__(7);
-var escapeTextContentForBrowser = __webpack_require__(39);
-var setInnerHTML = __webpack_require__(40);
+var escapeTextContentForBrowser = __webpack_require__(40);
+var setInnerHTML = __webpack_require__(41);
 
 /**
  * Set the textContent property of a node, ensuring that whitespace is preserved
@@ -11719,8 +11719,8 @@ var _prodInvariant = __webpack_require__(26),
 
 var ReactNoopUpdateQueue = __webpack_require__(107);
 
-var canDefineProperty = __webpack_require__(41);
-var emptyObject = __webpack_require__(33);
+var canDefineProperty = __webpack_require__(42);
+var emptyObject = __webpack_require__(34);
 var invariant = __webpack_require__(1);
 var lowPriorityWarning = __webpack_require__(66);
 
@@ -11901,7 +11901,7 @@ var ReactElement = __webpack_require__(21);
 
 var checkReactTypeSpec = __webpack_require__(262);
 
-var canDefineProperty = __webpack_require__(41);
+var canDefineProperty = __webpack_require__(42);
 var getIteratorFn = __webpack_require__(108);
 var warning = __webpack_require__(2);
 var lowPriorityWarning = __webpack_require__(66);
@@ -12420,6 +12420,10 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactDom = __webpack_require__(15);
 
+var _axios = __webpack_require__(33);
+
+var _axios2 = _interopRequireDefault(_axios);
+
 var _Question = __webpack_require__(135);
 
 var _Question2 = _interopRequireDefault(_Question);
@@ -12432,31 +12436,21 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-// import axios from 'axios';
 // import Form from './Form.js';
 // import FinishQuiz from './FinishQuiz.js';
 var style = { overflow: 'hidden' };
 
-
 var data = {
-    "name": "Quiz name",
-    "quiestions": [{
-        "name": "5 + 2",
+    "id": "",
+    "name": "",
+    "submit": false,
+    "questions": [{
+        "id": 1,
+        "name": "",
         "answers": [{
-            "name": "7",
-            "isCorrect": true
-        }, {
-            "name": "8",
-            "isCorrect": false
-        }]
-    }, {
-        "name": "2 * 5",
-        "answers": [{
-            "name": "7",
-            "isCorrect": false
-        }, {
-            "name": "10",
-            "isCorrect": true
+            "id": 1,
+            "name": "",
+            "correct": false
         }]
     }]
 };
@@ -12470,21 +12464,218 @@ var CQuiz = function (_React$Component) {
         var _this = _possibleConstructorReturn(this, (CQuiz.__proto__ || Object.getPrototypeOf(CQuiz)).call(this, props));
 
         _this.state = data;
+        _this.addQuestion = _this.addQuestion.bind(_this);
+        _this.removeQuestion = _this.removeQuestion.bind(_this);
+        _this.addAnswer = _this.addAnswer.bind(_this);
+        _this.removeAnswer = _this.removeAnswer.bind(_this);
+
+        _this.updateState = _this.updateState.bind(_this);
+        _this.submit = _this.submit.bind(_this);
+        _this.formIsValid = _this.formIsValid.bind(_this);
+        _this.handleInputChange = _this.handleInputChange.bind(_this);
         return _this;
     }
 
-    // Get all data
-
-
     _createClass(CQuiz, [{
         key: 'componentWillMount',
-        value: function componentWillMount() {}
+        value: function componentWillMount() {
+            console.log('componentWillMount');
+        }
+    }, {
+        key: 'componentWillReceiveProps',
+        value: function componentWillReceiveProps() {
+            this.setState({
+                "id": "",
+                "name": "",
+                "submit": false,
+                "questions": [{
+                    "id": 1,
+                    "name": "",
+                    "answers": [{
+                        "id": 1,
+                        "name": "",
+                        "correct": false
+                    }]
+                }]
+            });
+        }
+    }, {
+        key: 'componentDidMount',
+        value: function componentDidMount() {
+            var _this2 = this;
+
+            if (typeof this.props.match.params.quiz !== 'undefined') {
+                _axios2.default.get('quiz/get/' + this.props.match.params.quiz).then(function (res) {
+                    _this2.setState({ id: res.data.id, name: res.data.name, questions: res.data.questions }, function () {
+                        console.log(_this2.state);
+                    });
+                });
+            }
+        }
+    }, {
+        key: 'handleInputChange',
+        value: function handleInputChange(e) {
+            e.preventDefault();
+            var name = e.target.value;
+            this.setState({ name: name }, function () {});
+        }
+    }, {
+        key: 'addQuestion',
+        value: function addQuestion() {
+            var questions = this.state.questions;
+            questions.push({
+                "id": questions.length + 1,
+                "name": "",
+                "answers": [{
+                    "id": 1,
+                    "name": "",
+                    "correct": false
+                }]
+            });
+
+            this.setState({ questions: questions });
+        }
+    }, {
+        key: 'removeQuestion',
+        value: function removeQuestion(id) {
+            var questions = this.state.questions.filter(function (question) {
+                return question.id != id;
+            });
+
+            this.setState({ questions: questions });
+        }
+    }, {
+        key: 'addAnswer',
+        value: function addAnswer(question_id) {
+            var questions = this.state.questions;
+            var index = this.findQuestionById(question_id);
+
+            var id = questions[index].answers.length;
+
+            questions[index].answers.push({
+                "id": parseInt(id + 1),
+                "name": "",
+                "correct": false
+            });
+            this.setState({ questions: questions });
+        }
+    }, {
+        key: 'submit',
+        value: function submit(e) {
+            var _this3 = this;
+
+            e.preventDefault();
+            if (!this.formIsValid()) return;
+
+            var url = this.state.id > 0 ? 'quiz/edit/' + this.state.id : 'quiz/add';
+            _axios2.default.post(url, this.state).then(function (res) {
+                _this3.setState({
+                    "name": "",
+                    "submit": true,
+                    "questions": [{
+                        "id": 1,
+                        "name": "",
+                        "answers": [{
+                            "id": 1,
+                            "name": "",
+                            "correct": false
+                        }]
+                    }]
+                });
+            });
+        }
+    }, {
+        key: 'formIsValid',
+        value: function formIsValid() {
+            var questions = this.state.questions;
+            var response = true;
+            for (var i = 0; i < questions.length; i++) {
+                var questionDOM = $('#question-' + questions[i].id).closest('.form-group');
+                if (questions[i].name.length == 0) {
+                    questionDOM.addClass('has-error');
+                    response = false;
+                } else {
+                    questionDOM.removeClass('has-error');
+                }
+
+                var answers = questions[i].answers;
+                var correct = false;
+                for (var j = 0; j < answers.length; j++) {
+                    var answerDOM = $('#answer-' + answers[j].id).closest('.form-group');
+                    if (answers[j].correct) correct = true;
+
+                    if (answers[j].name.length == 0) {
+                        answerDOM.addClass('has-error');
+                        response = false;
+                    } else {
+                        answerDOM.removeClass('has-error');
+                    }
+                }
+
+                if (!correct) {
+                    questionDOM.addClass('has-error');
+                    questionDOM.find('.help-block').show();
+                    response = false;
+                } else {
+                    questionDOM.find('.help-block').hide();
+                }
+            }
+            return response;
+        }
+    }, {
+        key: 'removeAnswer',
+        value: function removeAnswer(answer_id, question_id) {
+            var questions = this.state.questions;
+            var index = this.findQuestionById(question_id);
+            var answers = questions[index].answers.filter(function (answer) {
+                return answer_id != answer.id;
+            });
+
+            questions[index].answers = answers;
+            this.setState({ questions: questions });
+        }
+    }, {
+        key: 'findQuestionById',
+        value: function findQuestionById(question_id) {
+            return this.state.questions.findIndex(function (question) {
+                return question.id == question_id;
+            });
+        }
+    }, {
+        key: 'findAnswerById',
+        value: function findAnswerById(question_index, answer_id) {
+            return this.state.questions[question_index].answers.findIndex(function (answer) {
+                return answer.id == answer_id;
+            });
+        }
+    }, {
+        key: 'updateState',
+        value: function updateState(data, question_id, answer_id) {
+            var questions = this.state.questions;
+            var question_index = this.findQuestionById(question_id);
+
+            // Update answer
+            if (typeof answer_id !== 'undefined') {
+                var index = this.findAnswerById(question_index, answer_id);
+                questions[question_index].answers[index] = data;
+            } else questions[question_index] = data;
+
+            this.setState({ questions: questions });
+        }
     }, {
         key: 'render',
         value: function render() {
-            console.log(this.state.questions);
+            var _this4 = this;
+
             var data = this.state.questions.map(function (question, index) {
-                return _react2.default.createElement(_Question2.default, { key: index, question: question });
+                return _react2.default.createElement(_Question2.default, {
+                    addQuestion: _this4.addQuestion,
+                    removeQuestion: _this4.removeQuestion,
+                    addAnswer: _this4.addAnswer,
+                    removeAnswer: _this4.removeAnswer,
+                    key: index,
+                    updateState: _this4.updateState,
+                    question: question });
             });
 
             return _react2.default.createElement(
@@ -12555,6 +12746,23 @@ var CQuiz = function (_React$Component) {
                                 _react2.default.createElement(
                                     'div',
                                     { className: 'box-body' },
+                                    this.state.submit ? _react2.default.createElement(
+                                        'div',
+                                        { className: 'alert alert-success alert-dismissible' },
+                                        _react2.default.createElement(
+                                            'button',
+                                            { type: 'button', className: 'close', 'data-dismiss': 'alert',
+                                                'aria-hidden': 'true' },
+                                            '\xD7'
+                                        ),
+                                        _react2.default.createElement(
+                                            'h4',
+                                            null,
+                                            _react2.default.createElement('i', { className: 'icon fa fa-check' }),
+                                            ' Alert!'
+                                        ),
+                                        'The form has successfuly submited'
+                                    ) : '',
                                     _react2.default.createElement(
                                         'div',
                                         { className: 'form-group', style: style },
@@ -12566,24 +12774,33 @@ var CQuiz = function (_React$Component) {
                                         _react2.default.createElement(
                                             'div',
                                             { className: 'col-sm-10' },
-                                            _react2.default.createElement('input', { type: 'email', className: 'form-control', id: 'inputEmail3',
-                                                placeholder: 'Quiz name' })
+                                            _react2.default.createElement('input', { type: 'email',
+                                                value: this.state.name,
+                                                onChange: this.handleInputChange,
+                                                className: 'form-control',
+                                                id: 'inputEmail3',
+                                                placeholder: 'Quiz name'
+                                            })
                                         )
                                     ),
-                                    data,
                                     _react2.default.createElement(
-                                        'div',
-                                        { className: 'form-group' },
+                                        'form',
+                                        { onSubmit: this.submit },
+                                        data,
                                         _react2.default.createElement(
                                             'div',
-                                            { className: 'col-sm-offset-2 col-sm-10' },
+                                            { className: 'form-group' },
                                             _react2.default.createElement(
                                                 'div',
-                                                { className: 'checkbox' },
+                                                { className: 'col-sm-offset-2 col-sm-10' },
                                                 _react2.default.createElement(
-                                                    'button',
-                                                    { className: 'btn btn-success' },
-                                                    'Save'
+                                                    'div',
+                                                    { className: 'checkbox' },
+                                                    _react2.default.createElement(
+                                                        'button',
+                                                        { type: 'submit', className: ' btn btn-success' },
+                                                        'Submit'
+                                                    )
                                                 )
                                             )
                                         )
@@ -13336,7 +13553,7 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactDom = __webpack_require__(15);
 
-var _axios = __webpack_require__(42);
+var _axios = __webpack_require__(33);
 
 var _axios2 = _interopRequireDefault(_axios);
 
@@ -13646,6 +13863,15 @@ var Sidebar = function (_React$Component) {
 									{ to: '/add-quiz' },
 									'Add Quiz'
 								)
+							),
+							_react2.default.createElement(
+								'li',
+								null,
+								_react2.default.createElement(
+									_reactRouterDom.Link,
+									{ to: '/list-quiz' },
+									'List of quizes'
+								)
 							)
 						)
 					)
@@ -13671,7 +13897,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "createHashHistory", function() { return __WEBPACK_IMPORTED_MODULE_1__createHashHistory__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__createMemoryHistory__ = __webpack_require__(159);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "createMemoryHistory", function() { return __WEBPACK_IMPORTED_MODULE_2__createMemoryHistory__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__LocationUtils__ = __webpack_require__(34);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__LocationUtils__ = __webpack_require__(35);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "createLocation", function() { return __WEBPACK_IMPORTED_MODULE_3__LocationUtils__["a"]; });
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "locationsAreEqual", function() { return __WEBPACK_IMPORTED_MODULE_3__LocationUtils__["b"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__PathUtils__ = __webpack_require__(28);
@@ -14541,11 +14767,13 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
+var _reactDom = __webpack_require__(15);
+
+var _reactDom2 = _interopRequireDefault(_reactDom);
+
 var _react = __webpack_require__(4);
 
 var _react2 = _interopRequireDefault(_react);
-
-var _reactDom = __webpack_require__(15);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -14566,15 +14794,41 @@ var Answer = function (_React$Component) {
     function Answer(props) {
         _classCallCheck(this, Answer);
 
-        return _possibleConstructorReturn(this, (Answer.__proto__ || Object.getPrototypeOf(Answer)).call(this, props));
+        var _this = _possibleConstructorReturn(this, (Answer.__proto__ || Object.getPrototypeOf(Answer)).call(this, props));
+
+        _this.addAnswer = _this.addAnswer.bind(_this);
+        _this.removeAnswer = _this.removeAnswer.bind(_this);
+
+        _this.handleInputChange = _this.handleInputChange.bind(_this);
+        return _this;
     }
 
-    // Get all data
-
-
     _createClass(Answer, [{
-        key: 'componentWillMount',
-        value: function componentWillMount() {}
+        key: 'handleInputChange',
+        value: function handleInputChange(e) {
+            var data = {
+                "id": this.props.answer.id,
+                "name": this.refs.name.value,
+                "correct": this.refs.correct.checked
+            };
+
+            if (this.refs.name.value.length == 0) {
+                $('#answer-' + this.props.answer.id).closest('.form-group').addClass('has-error');
+            } else {
+                $('#answer-' + this.props.answer.id).closest('.form-group').removeClass('has-error');
+                this.props.updateState(data, this.props.question_id, this.props.answer.id);
+            }
+        }
+    }, {
+        key: 'addAnswer',
+        value: function addAnswer() {
+            this.props.addAnswer(this.props.question_id);
+        }
+    }, {
+        key: 'removeAnswer',
+        value: function removeAnswer() {
+            this.props.removeAnswer(this.props.answer.id, this.props.question_id);
+        }
     }, {
         key: 'render',
         value: function render() {
@@ -14592,8 +14846,34 @@ var Answer = function (_React$Component) {
                     _react2.default.createElement(
                         'div',
                         { className: 'col-sm-10' },
-                        _react2.default.createElement('input', { type: 'email', className: 'form-control', id: 'inputEmail3',
-                            placeholder: 'Answer #1' })
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'input-group' },
+                            _react2.default.createElement('input', { type: 'text', value: this.props.answer.name, className: 'form-control', id: "answer-" + this.props.answer.id, ref: 'name', name: 'name', onChange: this.handleInputChange, placeholder: 'Answer #1' }),
+                            _react2.default.createElement(
+                                'span',
+                                { className: 'input-group-addon' },
+                                _react2.default.createElement('input', { type: 'checkbox', defaultChecked: this.props.answer.correct, ref: 'correct', name: 'correct', onChange: this.handleInputChange })
+                            ),
+                            _react2.default.createElement(
+                                'span',
+                                { className: 'input-group-addon' },
+                                _react2.default.createElement(
+                                    'a',
+                                    { onClick: this.addAnswer, className: 'pull-left' },
+                                    _react2.default.createElement('i', { className: 'fa fa-plus', 'aria-hidden': 'true' })
+                                )
+                            ),
+                            this.props.answer.id != 1 ? _react2.default.createElement(
+                                'span',
+                                { className: 'input-group-addon' },
+                                _react2.default.createElement(
+                                    'a',
+                                    { onClick: this.removeAnswer, className: 'pull-left' },
+                                    _react2.default.createElement('i', { className: 'fa fa-minus', 'aria-hidden': 'true' })
+                                )
+                            ) : ''
+                        )
                     )
                 )
             );
@@ -14647,21 +14927,51 @@ var Question = function (_React$Component) {
     function Question(props) {
         _classCallCheck(this, Question);
 
-        return _possibleConstructorReturn(this, (Question.__proto__ || Object.getPrototypeOf(Question)).call(this, props));
+        var _this = _possibleConstructorReturn(this, (Question.__proto__ || Object.getPrototypeOf(Question)).call(this, props));
+
+        _this.addQuestion = _this.addQuestion.bind(_this);
+        _this.removeQuestion = _this.removeQuestion.bind(_this);
+
+        _this.handleInputChange = _this.handleInputChange.bind(_this);
+        return _this;
     }
 
-    // Get all data
-
-
     _createClass(Question, [{
-        key: 'componentWillMount',
-        value: function componentWillMount() {}
+        key: 'addQuestion',
+        value: function addQuestion() {
+            this.props.addQuestion();
+        }
+    }, {
+        key: 'removeQuestion',
+        value: function removeQuestion() {
+            this.props.removeQuestion(this.props.question.id);
+        }
+    }, {
+        key: 'handleInputChange',
+        value: function handleInputChange(e) {
+            var question = this.props.question;
+            question.name = e.target.value;
+
+            if (e.target.value.length == 0) {
+                $('#question-' + this.props.question.id).closest('.form-group').addClass('has-error');
+            } else {
+                $('#question-' + this.props.question.id).closest('.form-group').removeClass('has-error');
+                this.props.updateState(question, this.props.question.id);
+            }
+        }
     }, {
         key: 'render',
         value: function render() {
+            var _this2 = this;
 
-            var data = this.props.question.answers.map(function (answers, index) {
-                return _react2.default.createElement(_Answer2.default, { key: index, answer: answer });
+            var data = this.props.question.answers.map(function (answer, index) {
+                return _react2.default.createElement(_Answer2.default, {
+                    removeAnswer: _this2.props.removeAnswer,
+                    addAnswer: _this2.props.addAnswer,
+                    key: index,
+                    question_id: _this2.props.question.id,
+                    updateState: _this2.props.updateState,
+                    answer: answer });
             });
 
             return _react2.default.createElement(
@@ -14681,11 +14991,39 @@ var Question = function (_React$Component) {
                         _react2.default.createElement(
                             'div',
                             { className: 'col-sm-10' },
-                            _react2.default.createElement('input', { type: 'email', className: 'form-control', id: 'inputEmail3',
-                                placeholder: 'Question #1' })
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'input-group' },
+                                _react2.default.createElement('input', { type: 'text', value: this.props.question.name, className: 'form-control', id: "question-" + this.props.question.id, onChange: this.handleInputChange, placeholder: 'Question #1' }),
+                                _react2.default.createElement(
+                                    'span',
+                                    { className: 'input-group-addon' },
+                                    _react2.default.createElement(
+                                        'a',
+                                        { onClick: this.addQuestion, className: 'pull-left' },
+                                        _react2.default.createElement('i', { className: 'fa fa-plus', 'aria-hidden': 'true' })
+                                    )
+                                ),
+                                this.props.question.id != 1 ? _react2.default.createElement(
+                                    'span',
+                                    { className: 'input-group-addon  ttt' },
+                                    _react2.default.createElement(
+                                        'a',
+                                        { onClick: this.removeQuestion, className: 'pull-left' },
+                                        _react2.default.createElement('i', { className: 'fa fa-minus', 'aria-hidden': 'true' })
+                                    )
+                                ) : '',
+                                _react2.default.createElement('div', { className: 'clearfix' })
+                            ),
+                            _react2.default.createElement(
+                                'span',
+                                { className: 'help-block' },
+                                'Please choose 1 correct answer.'
+                            )
                         )
                     )
-                )
+                ),
+                data
             );
         }
     }]);
@@ -14714,7 +15052,7 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactDom = __webpack_require__(15);
 
-var _axios = __webpack_require__(42);
+var _axios = __webpack_require__(33);
 
 var _axios2 = _interopRequireDefault(_axios);
 
@@ -14794,7 +15132,7 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactDom = __webpack_require__(15);
 
-var _axios = __webpack_require__(42);
+var _axios = __webpack_require__(33);
 
 var _axios2 = _interopRequireDefault(_axios);
 
@@ -14902,6 +15240,10 @@ var _CQuiz = __webpack_require__(111);
 
 var _CQuiz2 = _interopRequireDefault(_CQuiz);
 
+var _QuizList = __webpack_require__(268);
+
+var _QuizList2 = _interopRequireDefault(_QuizList);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -14937,7 +15279,9 @@ var App = function (_React$Component) {
 					_reactRouterDom.Switch,
 					null,
 					_react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/', component: _Quiz2.default }),
-					_react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/add-quiz', component: _CQuiz2.default })
+					_react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/add-quiz', component: _CQuiz2.default }),
+					_react2.default.createElement(_reactRouterDom.Route, { path: '/list-quiz', component: _QuizList2.default }),
+					_react2.default.createElement(_reactRouterDom.Route, { path: '/add-quiz/:quiz', component: _CQuiz2.default })
 				),
 				_react2.default.createElement(_Footer2.default, null)
 			);
@@ -14972,7 +15316,7 @@ var App = function (_React$Component) {
 
 var _assign = __webpack_require__(5);
 
-var emptyObject = __webpack_require__(33);
+var emptyObject = __webpack_require__(34);
 var _invariant = __webpack_require__(1);
 
 if (process.env.NODE_ENV !== 'production') {
@@ -17400,7 +17744,7 @@ exports.default = createMemoryHistory;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_warning__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_invariant__ = __webpack_require__(22);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_invariant___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_invariant__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__LocationUtils__ = __webpack_require__(34);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__LocationUtils__ = __webpack_require__(35);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__PathUtils__ = __webpack_require__(28);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__createTransitionManager__ = __webpack_require__(47);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__DOMUtils__ = __webpack_require__(77);
@@ -17704,7 +18048,7 @@ var createBrowserHistory = function createBrowserHistory() {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_warning__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_invariant__ = __webpack_require__(22);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_invariant___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_invariant__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__LocationUtils__ = __webpack_require__(34);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__LocationUtils__ = __webpack_require__(35);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__PathUtils__ = __webpack_require__(28);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__createTransitionManager__ = __webpack_require__(47);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__DOMUtils__ = __webpack_require__(77);
@@ -18024,7 +18368,7 @@ var createHashHistory = function createHashHistory() {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_warning__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__PathUtils__ = __webpack_require__(28);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__LocationUtils__ = __webpack_require__(34);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__LocationUtils__ = __webpack_require__(35);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__createTransitionManager__ = __webpack_require__(47);
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
@@ -19981,7 +20325,7 @@ module.exports = DefaultEventPluginOrder;
 
 var EventPropagators = __webpack_require__(30);
 var ReactDOMComponentTree = __webpack_require__(6);
-var SyntheticMouseEvent = __webpack_require__(37);
+var SyntheticMouseEvent = __webpack_require__(38);
 
 var eventTypes = {
   mouseEnter: {
@@ -20631,7 +20975,7 @@ if (process.env.NODE_ENV !== 'production') {
   var checkReactTypeSpec = __webpack_require__(226);
 }
 
-var emptyObject = __webpack_require__(33);
+var emptyObject = __webpack_require__(34);
 var invariant = __webpack_require__(1);
 var shallowEqual = __webpack_require__(44);
 var shouldUpdateReactComponent = __webpack_require__(62);
@@ -21650,8 +21994,8 @@ var DOMNamespaces = __webpack_require__(50);
 var DOMProperty = __webpack_require__(19);
 var DOMPropertyOperations = __webpack_require__(82);
 var EventPluginHub = __webpack_require__(29);
-var EventPluginRegistry = __webpack_require__(35);
-var ReactBrowserEventEmitter = __webpack_require__(36);
+var EventPluginRegistry = __webpack_require__(36);
+var ReactBrowserEventEmitter = __webpack_require__(37);
 var ReactDOMComponentFlags = __webpack_require__(83);
 var ReactDOMComponentTree = __webpack_require__(6);
 var ReactDOMInput = __webpack_require__(185);
@@ -21663,7 +22007,7 @@ var ReactMultiChild = __webpack_require__(204);
 var ReactServerRenderingTransaction = __webpack_require__(209);
 
 var emptyFunction = __webpack_require__(10);
-var escapeTextContentForBrowser = __webpack_require__(39);
+var escapeTextContentForBrowser = __webpack_require__(40);
 var invariant = __webpack_require__(1);
 var isEventSupported = __webpack_require__(61);
 var shallowEqual = __webpack_require__(44);
@@ -23613,7 +23957,7 @@ var DOMChildrenOperations = __webpack_require__(49);
 var DOMLazyTree = __webpack_require__(23);
 var ReactDOMComponentTree = __webpack_require__(6);
 
-var escapeTextContentForBrowser = __webpack_require__(39);
+var escapeTextContentForBrowser = __webpack_require__(40);
 var invariant = __webpack_require__(1);
 var validateDOMNesting = __webpack_require__(63);
 
@@ -24083,7 +24427,7 @@ module.exports = {
 
 
 var DOMProperty = __webpack_require__(19);
-var EventPluginRegistry = __webpack_require__(35);
+var EventPluginRegistry = __webpack_require__(36);
 var ReactComponentTreeHook = __webpack_require__(8);
 
 var warning = __webpack_require__(2);
@@ -24570,7 +24914,7 @@ module.exports = ReactDebugTool;
 var _assign = __webpack_require__(5);
 
 var ReactUpdates = __webpack_require__(16);
-var Transaction = __webpack_require__(38);
+var Transaction = __webpack_require__(39);
 
 var emptyFunction = __webpack_require__(10);
 
@@ -24997,7 +25341,7 @@ var EventPluginHub = __webpack_require__(29);
 var EventPluginUtils = __webpack_require__(51);
 var ReactComponentEnvironment = __webpack_require__(54);
 var ReactEmptyComponent = __webpack_require__(85);
-var ReactBrowserEventEmitter = __webpack_require__(36);
+var ReactBrowserEventEmitter = __webpack_require__(37);
 var ReactHostComponent = __webpack_require__(87);
 var ReactUpdates = __webpack_require__(16);
 
@@ -25715,10 +26059,10 @@ var _assign = __webpack_require__(5);
 
 var CallbackQueue = __webpack_require__(81);
 var PooledClass = __webpack_require__(20);
-var ReactBrowserEventEmitter = __webpack_require__(36);
+var ReactBrowserEventEmitter = __webpack_require__(37);
 var ReactInputSelection = __webpack_require__(88);
 var ReactInstrumentation = __webpack_require__(12);
-var Transaction = __webpack_require__(38);
+var Transaction = __webpack_require__(39);
 var ReactUpdateQueue = __webpack_require__(56);
 
 /**
@@ -25992,7 +26336,7 @@ module.exports = ReactRef;
 var _assign = __webpack_require__(5);
 
 var PooledClass = __webpack_require__(20);
-var Transaction = __webpack_require__(38);
+var Transaction = __webpack_require__(39);
 var ReactInstrumentation = __webpack_require__(12);
 var ReactServerUpdateQueue = __webpack_require__(210);
 
@@ -26760,7 +27104,7 @@ var SyntheticClipboardEvent = __webpack_require__(216);
 var SyntheticEvent = __webpack_require__(18);
 var SyntheticFocusEvent = __webpack_require__(219);
 var SyntheticKeyboardEvent = __webpack_require__(221);
-var SyntheticMouseEvent = __webpack_require__(37);
+var SyntheticMouseEvent = __webpack_require__(38);
 var SyntheticDragEvent = __webpack_require__(218);
 var SyntheticTouchEvent = __webpack_require__(222);
 var SyntheticTransitionEvent = __webpack_require__(223);
@@ -27109,7 +27453,7 @@ module.exports = SyntheticCompositionEvent;
 
 
 
-var SyntheticMouseEvent = __webpack_require__(37);
+var SyntheticMouseEvent = __webpack_require__(38);
 
 /**
  * @interface DragEvent
@@ -27416,7 +27760,7 @@ module.exports = SyntheticTransitionEvent;
 
 
 
-var SyntheticMouseEvent = __webpack_require__(37);
+var SyntheticMouseEvent = __webpack_require__(38);
 
 /**
  * @interface WheelEvent
@@ -28195,7 +28539,7 @@ module.exports = getVendorPrefixedEventName;
 
 
 
-var escapeTextContentForBrowser = __webpack_require__(39);
+var escapeTextContentForBrowser = __webpack_require__(40);
 
 /**
  * Escapes attribute value to prevent scripting attacks.
@@ -30067,6 +30411,230 @@ function traverseAllChildren(children, callback, traverseContext) {
 
 module.exports = traverseAllChildren;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+
+/***/ }),
+/* 267 */,
+/* 268 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _reactDom = __webpack_require__(15);
+
+var _reactDom2 = _interopRequireDefault(_reactDom);
+
+var _react = __webpack_require__(4);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactRouterDom = __webpack_require__(67);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var style = {
+    'listStyle': 'none'
+};
+
+var QuizList = function (_React$Component) {
+    _inherits(QuizList, _React$Component);
+
+    function QuizList(props) {
+        _classCallCheck(this, QuizList);
+
+        var _this = _possibleConstructorReturn(this, (QuizList.__proto__ || Object.getPrototypeOf(QuizList)).call(this, props));
+
+        _this.state = {
+            "quizes": []
+        };
+        return _this;
+    }
+
+    _createClass(QuizList, [{
+        key: 'componentDidMount',
+        value: function componentDidMount() {
+            var _this2 = this;
+
+            axios.get('quiz/all').then(function (res) {
+                _this2.setState({ quizes: res.data }, function () {
+                    return console.log(_this2.state);
+                });
+            });
+        }
+    }, {
+        key: 'deleteQuiz',
+        value: function deleteQuiz(id) {
+            var _this3 = this;
+
+            axios.get('quiz/delete/' + id).then(function (res) {
+                var quizes = _this3.state.quizes.filter(function (quiz) {
+                    return quiz.id != id;
+                });
+                _this3.setState({ quizes: quizes });
+            });
+        }
+    }, {
+        key: 'render',
+        value: function render() {
+            var _this4 = this;
+
+            var data = this.state.quizes.map(function (quiz) {
+                return _react2.default.createElement(
+                    'tr',
+                    { className: 'quiz_list', key: quiz.id },
+                    _react2.default.createElement(
+                        'td',
+                        null,
+                        quiz.id,
+                        '.'
+                    ),
+                    _react2.default.createElement(
+                        'td',
+                        null,
+                        quiz.name
+                    ),
+                    _react2.default.createElement(
+                        'td',
+                        null,
+                        _react2.default.createElement(
+                            'li',
+                            null,
+                            _react2.default.createElement(
+                                _reactRouterDom.Link,
+                                { style: { textDecoration: 'none' }, className: 'pull-right btn btn-info', to: "/add-quiz/" + quiz.id },
+                                'Edit'
+                            )
+                        ),
+                        _react2.default.createElement(
+                            'button',
+                            { className: 'pull-right btn btn-warning', onClick: _this4.deleteQuiz.bind(_this4, quiz.id) },
+                            'Delete'
+                        )
+                    )
+                );
+            });
+
+            return _react2.default.createElement(
+                'div',
+                { className: 'content-wrapper' },
+                _react2.default.createElement(
+                    'section',
+                    { className: 'content-header' },
+                    _react2.default.createElement(
+                        'h1',
+                        null,
+                        _react2.default.createElement(
+                            'small',
+                            null,
+                            'preview of simple tables'
+                        )
+                    ),
+                    _react2.default.createElement(
+                        'ol',
+                        { className: 'breadcrumb' },
+                        _react2.default.createElement(
+                            'li',
+                            null,
+                            _react2.default.createElement(
+                                'a',
+                                { href: '#' },
+                                _react2.default.createElement('i', { className: 'fa fa-dashboard' }),
+                                ' Questions '
+                            )
+                        ),
+                        _react2.default.createElement(
+                            'li',
+                            null,
+                            _react2.default.createElement(
+                                'a',
+                                { href: '#' },
+                                'Tables'
+                            )
+                        ),
+                        _react2.default.createElement(
+                            'li',
+                            { className: 'active' },
+                            'Simple'
+                        )
+                    )
+                ),
+                _react2.default.createElement(
+                    'section',
+                    { className: 'content' },
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'row' },
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'col-md-12' },
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'box' },
+                                _react2.default.createElement(
+                                    'div',
+                                    { className: 'box-header with-border' },
+                                    _react2.default.createElement(
+                                        'h3',
+                                        { className: 'box-title' },
+                                        'Bordered Table'
+                                    )
+                                ),
+                                _react2.default.createElement(
+                                    'div',
+                                    { className: 'box-body' },
+                                    _react2.default.createElement(
+                                        'table',
+                                        { className: 'table table-bordered' },
+                                        _react2.default.createElement(
+                                            'tbody',
+                                            null,
+                                            _react2.default.createElement(
+                                                'tr',
+                                                null,
+                                                _react2.default.createElement(
+                                                    'th',
+                                                    null,
+                                                    '#'
+                                                ),
+                                                _react2.default.createElement(
+                                                    'th',
+                                                    null,
+                                                    'Quiz name'
+                                                ),
+                                                _react2.default.createElement(
+                                                    'th',
+                                                    null,
+                                                    'Action'
+                                                )
+                                            ),
+                                            data
+                                        )
+                                    )
+                                )
+                            )
+                        )
+                    )
+                )
+            );
+        }
+    }]);
+
+    return QuizList;
+}(_react2.default.Component);
+
+exports.default = QuizList;
 
 /***/ })
 /******/ ]);

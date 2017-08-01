@@ -11,9 +11,17 @@
 }
 
 .padding-30{
-    padding: 0 30px;
+    padding: 0 0 0 30px;
 }
 
 .padding-15{
-    padding: 0 15px;
+    padding: 0 0 0 15px;
+}
+
+.help-block{
+    display:none;
+}
+
+.quiz_list li{
+    list-style: none;
 }

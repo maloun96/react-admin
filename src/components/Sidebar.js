@@ -28,7 +28,8 @@ class Sidebar extends React.Component {
 			      <ul className="sidebar-menu">
 			        <li className="header">MAIN NAVIGATION</li>
 			        <li><Link to='/'>Quiz</Link></li>
-					  <li><Link to='/add-quiz'>Add Quiz</Link></li>
+				  	<li><Link to='/add-quiz'>Add Quiz</Link></li>
+				  	<li><Link to='/list-quiz'>List of quizes</Link></li>
 			      </ul>
 			    </section>
 			  </aside>

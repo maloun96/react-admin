@@ -52,6 +52,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 $router['questions/all'] = 'all';
 $router['questions/add']['post'] = 'add';
+
+$router['quiz/add']['post'] = 'add';
+$router['quiz/all'] = 'all';
+$router['quiz/get/:quiz'] = 'get';
+$router['quiz/delete/:quiz'] = 'edit';
+$router['quiz/delete/:quiz'] = 'get';
+
 $router['home/'] = 'home/index';
 
 $route['default_controller'] = 'home';
