@@ -29,8 +29,8 @@ class Answer extends React.Component {
             $('#answer-' + this.props.answer.id).closest('.form-group').addClass('has-error');
         }else{
             $('#answer-' + this.props.answer.id).closest('.form-group').removeClass('has-error');
-            this.props.updateState(data, this.props.question_id, this.props.answer.id);
         }
+        this.props.updateState(data, this.props.question_id, this.props.answer.id);
     }
 
 

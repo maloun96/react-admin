@@ -40,6 +40,7 @@ class QuizList extends React.Component {
                     <td>{quiz.name}</td>
                     <td>
                         <li><Link style={{ textDecoration: 'none' }} className="pull-right btn btn-info" to={"/add-quiz/" + quiz.id}>Edit</Link></li>
+                        <li><Link style={{ textDecoration: 'none' }} className="pull-right btn btn-warning" to={"/quiz/" + quiz.id}>Play</Link></li>
                         <button className="pull-right btn btn-warning" onClick={this.deleteQuiz.bind(this, quiz.id)}>Delete</button>
                     </td>
                 </tr>

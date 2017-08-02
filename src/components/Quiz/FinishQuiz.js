@@ -27,7 +27,7 @@ class FinishQuiz extends React.Component {
         return (
             <div>
                 <h2>You finished a quiz</h2>
-                <h3>You have {this.props.points} points</h3>
+                <h3>You have {this.props.points} points of {this.props.total_points}</h3>
             </div>
         );
     }
