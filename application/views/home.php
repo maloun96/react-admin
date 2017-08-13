@@ -43,7 +43,6 @@
 </div>
 <!-- ./wrapper -->
 <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-<script type="text/javascript" src="/public/bundle.js"></script>
 <!-- jQuery 2.2.3 -->
 <script src="/public/plugins/jQuery/jquery-2.2.3.min.js"></script>
 <!-- jQuery UI 1.11.4 -->
@@ -81,5 +80,6 @@
         $('body').css('min-height', '600px');
     })
 </script>
+<script type="text/javascript" src="/public/bundle.js"></script>
 </body>
 </html>

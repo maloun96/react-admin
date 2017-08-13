@@ -12,6 +12,8 @@ import Footer from './components/Footer.js';
 import Quiz from './components/Quiz/Quiz.js';
 import CQuiz from './components/CQuiz/CQuiz.js';
 import QuizList from './components/CQuiz/QuizList.js';
+import Mail from './components/Mail/Mail.js';
+import CMail from './components/Mail/CMail.js';
 
 const hashHistory = createHashHistory()
 
@@ -26,6 +28,8 @@ class App extends React.Component {
                     <Route exact path='/add-quiz' component={CQuiz}/>
                     <Route path='/list-quiz' component={QuizList}/>
                     <Route path='/add-quiz/:quiz' component={CQuiz}/>
+                    <Route exact path='/mail' component={Mail}/>
+                    <Route path='/mail/compose' component={CMail}/>
                 </Switch>
                 <Footer />
             </div>

@@ -29,6 +29,7 @@ class Sidebar extends React.Component {
 			        <li className="header">MAIN NAVIGATION</li>
 				  	<li><Link to='/add-quiz'>Add Quiz</Link></li>
 				  	<li><Link to='/list-quiz'>List of quizes</Link></li>
+				  	<li><Link to='/mail'>Mail</Link></li>
 			      </ul>
 			    </section>
 			  </aside>
