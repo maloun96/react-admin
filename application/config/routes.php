@@ -59,6 +59,9 @@ $router['quiz/get/:quiz'] = 'get';
 $router['quiz/delete/:quiz'] = 'edit';
 $router['quiz/delete/:quiz'] = 'get';
 
+$router['mail/add']['post'] = 'add';
+$router['mail/get'] = 'get';
+
 $router['home/'] = 'home/index';
 
 $route['default_controller'] = 'home';

@@ -24,7 +24,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |
 */
 $config['base_url'] = 'www.codelgniter.dev';
-
+$config['upload_path'] = './public/';
 /*
 |--------------------------------------------------------------------------
 | Index File
